@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Noto Serif", serif;
   font-family: "Noto Serif JP", serif;
@@ -21,7 +20,6 @@ img {
 
 .section-title {
   text-align: center;
-  padding-top: 60px;
   padding-bottom: 30px;
 }
 .section-title-en {
@@ -37,7 +35,6 @@ img {
   padding-top: 60px;
   font-size: 2em;
   color: #00859B;
-  margin-bottom: 2%;
 }
 .section-title-sub {
   text-align: center;
@@ -130,129 +127,77 @@ img {
   display: none;
 }
 
-.recruit-title {
-  text-align: center;
-}
-.recruit-title-main {
-  font-size: 1.5em;
-  margin-bottom: 3%;
-}
-.recruit-title-main-line {
-  margin-left: 80px;
-}
-.recruit-title-sub {
-  font-size: 1.2em;
-  margin-bottom: 60px;
-}
-.recruit-container-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.recruit-container-flex-title {
-  padding: 0 5%;
+.new {
   width: 40%;
-  text-align: left;
+  margin: auto;
 }
-.recruit-container-flex-title-freshers::before {
-  content: "Freshers\a";
-  white-space: pre;
-  font-family: "Satisfy", "Noto-serif";
-  font-weight: lighter;
-  position: relative;
-  left: -50px;
-  bottom: -10px;
-  color: rgba(128, 128, 128, 0.2);
+.new-container-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
-.recruit-container-flex-title-mid::before {
-  content: "Mid-carrier\a";
-  white-space: pre;
-  font-family: "Satisfy", "メイリオ";
-  font-weight: lighter;
-  position: relative;
-  left: -50px;
-  bottom: -10px;
-  color: rgba(128, 128, 128, 0.2);
+.new-container-img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
-.recruit-container-flex-imgs {
-  width: 60%;
+.new-container-desc {
+  line-height: 2em;
 }
-
-.recruitment-btn {
-  text-align: center;
-  margin-top: 30px;
-}
-.recruitment-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.recruitment-flex-container {
-  width: 30%;
-  background-color: rgba(0, 133, 155, 0.1);
-  padding: 5%;
-}
-.recruitment-flex-container-title-job {
-  text-align: center;
-  padding-bottom: 5%;
+.new-container-desc-title {
   font-size: 1.5em;
-  border-bottom: 1px solid #222;
-}
-.recruitment-flex-container-title-details {
-  line-height: 1.2em;
-  margin-top: 5%;
-  margin-bottom: 30%;
-}
-.recruitment-flex-container-desc-title {
-  margin: 5% 0;
-}
-.recruitment-flex-container:not(:last-child) {
-  margin-right: 1%;
 }
 
-.interview-title {
-  text-align: center;
-  padding-bottom: 60px;
-}
-.interview-flex {
+.article-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.interview-flex-link {
-  cursor: pointer;
-  position: relative;
-  width: 32%;
-  margin-right: 1%;
-  margin-bottom: 1%;
+.article-flex-container {
+  width: 30%;
+  margin-bottom: 5%;
+  overflow: hidden;
 }
-.interview-flex-link-desc {
-  padding-top: 15%;
+.article-flex-container-img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.article-flex-container-img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.article-flex-container-desc {
+  line-height: 2em;
+}
+.article-flex-container-desc-date {
+  font-size: 0.8em;
+}
+.article-flex-container:not(:nth-child(3n)) {
+  margin-right: 3%;
+}
+
+.pages {
   text-align: center;
+  padding-bottom: 60px;
+}
+.pages-link {
+  display: inline-block;
   color: #fff;
-}
-.interview-flex-link-desc-name {
-  font-size: 1.5em;
-  margin: 5% 0;
-}
-.interview-flex .mask {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-.interview-flex-link:hover .mask {
-  opacity: 1;
+  background-color: #00859B;
+  width: 40px;
+  height: 50px;
+  line-height: 50px;
 }
 
 .contact {
@@ -432,108 +377,15 @@ img {
     margin: auto;
   }
 
-  .recruit-container-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .recruit-container-flex-title {
-    width: 100%;
-    padding: 0;
-    padding-bottom: 5%;
-  }
-  .recruit-container-flex-midcarrier {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+  .new {
+    width: 60%;
   }
 
-  .recruitment-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .article-flex-container {
+    width: 47%;
   }
-  .recruitment-flex-container {
-    width: 90%;
-  }
-  .recruitment-flex-container-title-details {
-    margin-bottom: 4%;
-  }
-  .recruitment-flex-container:not(:last-child) {
-    margin-bottom: 5%;
-  }
-
-  .interview {
-    background-color: #fff;
-  }
-  .interview-title {
-    text-align: center;
-    padding-bottom: 60px;
-  }
-  .interview-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    padding: 0 0 30px 30px;
-    overflow-x: scroll;
-    margin: auto;
-  }
-  .interview-flex-link {
-    width: calc((100% - 70px) / 3);
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    position: relative;
-  }
-  .interview-flex-link-desc {
-    padding-top: 8%;
-    text-align: center;
-    color: #fff;
-    font-size: 0.8em;
-  }
-  .interview-flex-link-desc-name {
-    font-size: 1em;
-    margin: 5% 0;
-  }
-  .interview-flex-link:not(:first-child) {
-    margin-left: 1%;
-  }
-  .interview-flex .mask {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-  }
-  .interview-flex-link:hover .mask {
-    opacity: 1;
-  }
-
-  .interview-flex::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-  .interview-flex::-webkit-scrollbar-track {
-    width: 100%;
-    margin-left: 30px;
+  .article-flex-container:not(:nth-child(2n)) {
     margin-right: 3%;
-    background: #fff;
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 2px gray;
-            box-shadow: inset 0 0 2px gray;
-  }
-  .interview-flex::-webkit-scrollbar-thumb {
-    background: #00859B;
-    border-radius: 10px;
   }
 
   .footer-company {
@@ -584,17 +436,13 @@ img {
     margin-top: 7%;
   }
 
-  .interview-flex {
-    width: 100%;
-  }
-  .interview-flex-link {
-    width: calc((100% - 70px) / 1);
+  .new {
+    width: 90%;
   }
 
-  .interview-flex::-webkit-scrollbar-track {
+  .article-flex-container {
     width: 100%;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-right: 0;
   }
 
   .footer-company {
@@ -655,4 +503,4 @@ img {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
-/*# sourceMappingURL=recruit.css.map */
+/*# sourceMappingURL=home.css.map */

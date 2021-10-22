@@ -127,14 +127,14 @@ $color-gray:rgba($color:#00859B,$alpha:0.1);
         &-freshers::before{
           content: "Freshers\A";
           white-space: pre;
-          font-family: "Satisfy","メイリオ";
+          font-family: "Satisfy","Noto-serif";
           font-weight: lighter;
           position: relative;
           left: -50px;
           bottom: -10px;
           color: rgba($color: gray, $alpha: 0.2);
         }
-        &-mid::before{
+        &-mid::before{//中途採用タイトル
           content: "Mid-carrier\A";
           white-space: pre;
           font-family: "Satisfy","メイリオ";
@@ -158,12 +158,10 @@ $color-gray:rgba($color:#00859B,$alpha:0.1);
     margin-top: 30px;
   }
   &-flex{
-    width: 90%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     &-container{
-      width: calc(100% / 3);
+      width: 30%;
       background-color: $color-gray;
       padding: 5%;
       &-title{
@@ -452,8 +450,9 @@ $color-gray:rgba($color:#00859B,$alpha:0.1);
           padding-top: 8% ;
           text-align: center;
           color: $color-white;
+          font-size: .8em;
           &-name{
-            font-size: 1.2em;
+            font-size: 1em;
             margin: 5% 0;
           }
         }

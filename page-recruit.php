@@ -1,3 +1,11 @@
+<?php
+/*
+Template Name: recruit.html
+*/
+?>
+
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/recruit.css">
+
 <?php get_header(); ?>
 
 <section class="section-title">
@@ -29,8 +37,8 @@
         </p>
       </div>
       <div class="recruit-containerflex-imgs">
-        <img class=" fade-in fade-in-up" src="img/recruit1.png" alt="">
-        <img class=" fade-in fade-in-up" src="img/recruit2.png" alt="">
+        <img class=" fade-in fade-in-up" src="<?php echo get_theme_file_uri("img/recruit1.png"); ?>" alt="">
+        <img class=" fade-in fade-in-up" src="<?php echo get_theme_file_uri("img/recruit2.png"); ?>" alt="">
       </div>
     </div>
   </div>
@@ -38,22 +46,18 @@
   <div class="recruit-container">
     <div class="recruit-container-flex recruit-container-flex-midcarrier">
       <div class="recruit-containerflex-imgs">
-        <img class=" fade-in fade-in-up" src="img/recruit3.png" alt="">
-        <img class=" fade-in fade-in-up" src="img/recruit4.png" alt="">
+        <img class=" fade-in fade-in-up" src="<?php echo get_theme_file_uri("img/recruit3.png"); ?>" alt="">
+        <img class=" fade-in fade-in-up" src="<?php echo get_theme_file_uri("img/recruit4.png"); ?>" alt="">
       </div>
       <div class="section-title recruit-container-flex-title">
-        <h2 class="section-title-main recruit-container-flex-title-mid fade-in fade-in-up">新卒採用</h2>
+        <h2 class="section-title-main recruit-container-flex-title-mid fade-in fade-in-up">中途採用</h2>
         <p class="section-title-sub fade-in fade-in-up">成長したいを叶える会社に</p>
-        <p class="section-title-p fade-in fade-in-up">社会人のファーストキャリア、<br>
-          自分のなりたい姿を実現して<br>
-          最大限成長できる会社を選んでほしい。<br>
+        <p class="section-title-p fade-in fade-in-up">私たちは事業成長をさせるのは人だと信じています。<br>
+          一人ひとりの成長に真摯に向き合い、<br>
+          それぞれが描いた「なりたい姿」を実現する会社を創り上げてきました。<br>
           <br>
-          estraには様々な挑戦をして欲しいという思いがあるからこそ<br>
-          ありとあらゆるチャンスがあります。<br>
-          <br>
-          このチャンスをその手で掴み取り、<br>
-          圧倒的なスピードで成長して、<br>
-          なりたい姿を実現して欲しい。
+          だからこそestraには,<br>
+          様々なプロフェッショナルが集い、活躍するのです。
         </p>
       </div>
     </div>
@@ -64,13 +68,13 @@
   <div class="section-title">
     <h3 class="section-title-main fade-in fade-in-up">現在募集中の人材</h3>
   </div>
-  <div class="recruitment-flex">
+  <div class="recruitment-flex inner">
     <div class="recruitment-flex-container fade-in fade-in-up">
       <div class="recruitment-flex-container-title">
-        <h3 class="recruitment-flex-container-title-job fade-in fade-in-up">ディレクター</h3>
-        <p class="recruitment-flex-container-title-details fade-in fade-in-up">クライアントの課題を解決するためにディレクションを行い、要件定義、設計のフェーズから参加していただきます。<br>制作フェーズではチームを率いてプロジェクトマネジメントを行います。設計通りに形にするだけでなく、クライアントに提案をしていきます。</p>
+        <h3 class="recruitment-flex-container-title-job">ディレクター</h3>
+        <p class="recruitment-flex-container-title-details">クライアントの課題を解決するためにディレクションを行い、要件定義、設計のフェーズから参加していただきます。<br>制作フェーズではチームを率いてプロジェクトマネジメントを行います。設計通りに形にするだけでなく、クライアントに提案をしていきます。</p>
       </div>
-      <div class="recruitment-flex-container-desc fade-in fade-in-up">
+      <div class="recruitment-flex-container-desc">
         <h4 class="recruitment-flex-container-desc-title">勤務時間</h4>
         <p>9:00~18:00(休憩1時間)</p>
         <h4 class="recruitment-flex-container-desc-title">福利厚生</h4>
@@ -88,11 +92,11 @@
     </div>
     <div class="recruitment-flex-container fade-in fade-in-up">
       <div class="recruitment-flex-container-title">
-        <h3 class="recruitment-flex-container-title-job fade-in fade-in-up">デザイナー</h3>
-        <p class="recruitment-flex-container-title-details fade-in fade-in-up">クライアントの要望に沿ったUI/UXデザインを行います。<br>
+        <h3 class="recruitment-flex-container-title-job">デザイナー</h3>
+        <p class="recruitment-flex-container-title-details">クライアントの要望に沿ったUI/UXデザインを行います。<br>
           ロゴの作成からバナーの作成、Webサイト、Webアプリのデザインなど業務は多岐に渡ります。数字を見ながらマーケティング部と共に分析を行い、最適なデザインを作成していただきます。<br></p>
       </div>
-      <div class="recruitment-flex-container-desc fade-in fade-in-up">
+      <div class="recruitment-flex-container-desc">
         <h4 class="recruitment-flex-container-desc-title">勤務時間</h4>
         <p>9:00~18:00(休憩1時間)</p>
         <h4 class="recruitment-flex-container-desc-title">福利厚生</h4>
@@ -110,10 +114,10 @@
     </div>
     <div class="recruitment-flex-container fade-in fade-in-up">
       <div class="recruitment-flex-container-title">
-        <h3 class="recruitment-flex-container-title-job fade-in fade-in-up">エンジニア</h3>
-        <p class="recruitment-flex-container-title-details fade-in fade-in-up">要件定義書を元にWeb関連サービスの作成を主に行っていただきます。<br>設計段階からディレクターと共に開発をすり合わせをし、サービスを形にしていきます。<br><br><br></p>
+        <h3 class="recruitment-flex-container-title-job">エンジニア</h3>
+        <p class="recruitment-flex-container-title-details">要件定義書を元にWeb関連サービスの作成を主に行っていただきます。<br>設計段階からディレクターと共に開発をすり合わせをし、サービスを形にしていきます。<br><br><br></p>
       </div>
-      <div class="recruitment-flex-container-desc fade-in fade-in-up">
+      <div class="recruitment-flex-container-desc">
         <h4 class="recruitment-flex-container-desc-title">勤務時間</h4>
         <p>9:00~18:00(休憩1時間)</p>
         <h4 class="recruitment-flex-container-desc-title">福利厚生</h4>
@@ -139,9 +143,9 @@
   </div>
   <div class="inner">
     <ul class="interview-flex">
-      <a href="yamamoto.html" class="interview-flex-link fade-in fade-in-up" id="modalopen">
+      <a href="<?php echo home_url("interview1-yamamoto"); ?>" class="interview-flex-link fade-in fade-in-up">
         <div class="interview-flex-link-img">
-          <img src="img/interview-yamamoto.png">
+          <img src="<?php echo get_theme_file_uri("img/interview-yamamoto.png"); ?>">
         </div>
         <div class="mask">
           <div class="interview-flex-link-desc">
@@ -151,9 +155,9 @@
           </div>
         </div>
       </a>
-      <a href="kakimoto.html" class="interview-flex-link fade-in fade-in-up">
+      <a href="<?php echo home_url("interview2-kakimoto"); ?>" class="interview-flex-link fade-in fade-in-up">
         <div class="interview-flex-link-img">
-          <img src="img/recruit-interview2.png">
+          <img src="<?php echo get_theme_file_uri("img/recruit-interview2.png"); ?>">
         </div>
         <div class="mask">
           <div class="interview-flex-link-desc">
@@ -163,9 +167,9 @@
           </div>
         </div>
       </a>
-      <a href="nakama.html" class="interview-flex-link fade-in fade-in-up">
+      <a href="<?php echo home_url("interview3-nakama"); ?>" class="interview-flex-link fade-in fade-in-up">
         <div class="interview-flex-link-img">
-          <img src="img/recruit-interview3.png">
+          <img src="<?php echo get_theme_file_uri("img/recruit-interview3.png"); ?>">
         </div>
         <div class="mask">
           <div class="interview-flex-link-desc">
@@ -175,9 +179,9 @@
           </div>
         </div>
       </a>
-      <a href="yamagguchi.html" class="interview-flex-link fade-in fade-in-up">
+      <a href="<?php echo home_url("interview3-yamaguchi"); ?>" class="interview-flex-link fade-in fade-in-up">
         <div class="interview-flex-link-img">
-          <img src="img/recruit-interview4.png">
+          <img src="<?php echo get_theme_file_uri("img/recruit-interview4.png"); ?>">
         </div>
         <div class="mask">
           <div class="interview-flex-link-desc">
@@ -187,9 +191,9 @@
           </div>
         </div>
       </a>
-      <a href="komiya.html" class="interview-flex-link fade-in fade-in-up">
+      <a href="<?php echo home_url("interview5-komiya"); ?>" class="interview-flex-link fade-in fade-in-up">
         <div class="interview-flex-link-img">
-          <img src="img/recruit-interview5.png">
+          <img src="<?php echo get_theme_file_uri("img/recruit-interview5.png"); ?>">
         </div>
         <div class="mask">
           <div class="interview-flex-link-desc">
@@ -199,9 +203,9 @@
           </div>
         </div>
       </a>
-      <a href="shiraishi.html" class="interview-flex-link fade-in fade-in-up">
+      <a href="<?php echo home_url("interview6-shiraishi"); ?>" class="interview-flex-link fade-in fade-in-up">
         <div class="interview-flex-link-img">
-          <img src="img/recruit-interview6.png">
+          <img src="<?php echo get_theme_file_uri("img/recruit-interview6.png"); ?>">
         </div>
         <div class="mask">
           <div class="interview-flex-link-desc">
@@ -218,13 +222,13 @@
 
 <section class="contact">
   <div class="section-title">
-    <h2 class="section-title-en fade-in fade-in-up">Contact</h2>
+    <h2 class="section-title-en  fade-in fade-in-up">Contact</h2>
     <p class="section-title-ja fade-in fade-in-up">お問い合わせ</p>
     <p class="section-title-p fade-in fade-in-up">採用に関するご質問、その他のお問い合わせ、お気軽にお問い合わせください。</p>
   </div>
   <div class="contact-flex">
-    <a href="" class="section-btn fade-in fade-in-up">採用情報はこちら</a>
-    <a href="" class="section-btn section-btn-navy fade-in fade-in-up">お問い合わせフォームへ</a>
+    <a href="<?php echo home_url("recruit"); ?>" class="section-btn fade-in fade-in-up">採用情報はこちら</a>
+    <a href="<?php echo home_url("contact"); ?>" class="section-btn section-btn-navy fade-in fade-in-up">お問い合わせフォームへ</a>
   </div>
   <p class="contact-desc fade-in fade-in-up">記入内容の確認後、2~3営業日以内にご連絡させていただきます。<br>
     お気軽にお問い合わせください。</p>

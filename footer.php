@@ -1,13 +1,14 @@
-<footer class="footer fade-in fade-in-up">
+<footer class="footer">
   <div class="inner60">
     <h2 class="footer-company"><a href="">株式会社estra</a></h2>
     <nav class="footer-nav">
       <ul class="footer-nav-list">
         <li class="footer-nav-list-item"><a href="<?php echo esc_url(home_url('/')); ?>">Top</a></li>
-        <li class="footer-nav-list-item"><a href="about.html">About</a></li>
-        <li class="footer-nav-list-item"><a href="service.html">Service</a></li>
-        <li class="footer-nav-list-item"><a href="recruit.html">Recruit</a></li>
-        <li class="footer-nav-list-item"><a href="contact.html">Contact</a></li>
+        <li class="footer-nav-list-item"><a href="<?php echo home_url("about"); ?>">About</a></li>
+        <li class="footer-nav-list-item"><a href="<?php echo home_url("service"); ?>">Service</>
+        </li>
+        <li class="footer-nav-list-item"><a href="<?php echo home_url("recruit"); ?>">Recruit</a></li>
+        <li class="footer-nav-list-item"><a href="<?php echo home_url("contact"); ?>">Contact</a></li>
         <li class="footer-nav-list-item"><a href="privacy.html">Privacy</a></li>
       </ul>
       <dl class="footer-nav-table">

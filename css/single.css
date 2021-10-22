@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Noto Serif", serif;
   font-family: "Noto Serif JP", serif;
@@ -33,19 +32,13 @@ img {
   padding: 20px;
 }
 .section-title-main {
-  text-align: center;
   padding-top: 60px;
   font-size: 2em;
   color: #00859B;
-  margin-bottom: 2%;
 }
 .section-title-sub {
-  text-align: center;
   font-size: 1.2em;
-  padding: 15px 0 60px 0;
-}
-.section-title-p {
-  line-height: 1.5em;
+  margin-bottom: 2%;
 }
 
 .section-btn {
@@ -130,59 +123,54 @@ img {
   display: none;
 }
 
-.recruit-title {
-  text-align: center;
+.news {
+  background-color: rgba(0, 133, 155, 0.1);
 }
-.recruit-title-main {
+.news-article {
+  padding: 60px 0;
+  margin: auto;
+  width: 80%;
+  line-height: 1.5em;
+}
+.news-article-date {
+  margin-bottom: 2%;
+}
+.news-article-date-new {
+  background-color: #FFD200;
+  padding: 2px 5px;
+  border-radius: 20px;
+  margin-left: 2%;
+}
+.news-article-title {
   font-size: 1.5em;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
 }
-.recruit-title-main-line {
-  margin-left: 80px;
+.news-article-text-img {
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-.recruit-title-sub {
-  font-size: 1.2em;
-  margin-bottom: 60px;
-}
-.recruit-container-flex {
+.news-article-rel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
 }
-.recruit-container-flex-title {
-  padding: 0 5%;
-  width: 40%;
-  text-align: left;
+.news-article-rel-prev {
+  border-bottom: 1px solid #222;
 }
-.recruit-container-flex-title-freshers::before {
-  content: "Freshers\a";
-  white-space: pre;
-  font-family: "Satisfy", "Noto-serif";
-  font-weight: lighter;
-  position: relative;
-  left: -50px;
-  bottom: -10px;
-  color: rgba(128, 128, 128, 0.2);
+.news-article-rel-totop {
+  border-bottom: 1px solid #222;
 }
-.recruit-container-flex-title-mid::before {
-  content: "Mid-carrier\a";
-  white-space: pre;
-  font-family: "Satisfy", "メイリオ";
-  font-weight: lighter;
-  position: relative;
-  left: -50px;
-  bottom: -10px;
-  color: rgba(128, 128, 128, 0.2);
-}
-.recruit-container-flex-imgs {
-  width: 60%;
+.news-article-rel-prev::before {
+  content: "<<";
+  margin-right: 10px;
 }
 
-.recruitment-btn {
-  text-align: center;
-  margin-top: 30px;
-}
-.recruitment-flex {
+.new {
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,69 +178,34 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.recruitment-flex-container {
-  width: 30%;
-  background-color: rgba(0, 133, 155, 0.1);
+.new-container {
+  border: 1px solid #eee;
+  -webkit-box-shadow: 3px 3px 2px #eee;
+          box-shadow: 3px 3px 2px #eee;
+}
+.new-container-img {
+  overflow: hidden;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.new-container-img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.new-container-desc {
   padding: 5%;
+  line-height: 2em;
 }
-.recruitment-flex-container-title-job {
-  text-align: center;
-  padding-bottom: 5%;
-  font-size: 1.5em;
-  border-bottom: 1px solid #222;
+.new-container-desc-date {
+  font-size: 0.8em;
 }
-.recruitment-flex-container-title-details {
-  line-height: 1.2em;
-  margin-top: 5%;
-  margin-bottom: 30%;
-}
-.recruitment-flex-container-desc-title {
-  margin: 5% 0;
-}
-.recruitment-flex-container:not(:last-child) {
-  margin-right: 1%;
-}
-
-.interview-title {
-  text-align: center;
-  padding-bottom: 60px;
-}
-.interview-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.interview-flex-link {
-  cursor: pointer;
-  position: relative;
-  width: 32%;
-  margin-right: 1%;
-  margin-bottom: 1%;
-}
-.interview-flex-link-desc {
-  padding-top: 15%;
-  text-align: center;
-  color: #fff;
-}
-.interview-flex-link-desc-name {
-  font-size: 1.5em;
-  margin: 5% 0;
-}
-.interview-flex .mask {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-.interview-flex-link:hover .mask {
-  opacity: 1;
+.new-container:not(:last-child) {
+  margin-right: 2%;
 }
 
 .contact {
@@ -406,16 +359,11 @@ img {
     text-align: center;
   }
   .section-title-en {
+    font-size: 2em;
     color: #00859B;
   }
   .section-title-ja {
     padding: 15px;
-  }
-  .section-title-main {
-    padding-top: 30px;
-  }
-  .section-title-sub {
-    padding: 15px 0;
   }
 
   .section-btn:first-child {
@@ -432,112 +380,24 @@ img {
     margin: auto;
   }
 
-  .recruit-container-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .recruit-container-flex-title {
+  .news-article {
     width: 100%;
-    padding: 0;
-    padding-bottom: 5%;
-  }
-  .recruit-container-flex-midcarrier {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
   }
 
-  .recruitment-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .new {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .recruitment-flex-container {
-    width: 90%;
+  .new-container {
+    width: 48%;
+    margin-bottom: 2%;
   }
-  .recruitment-flex-container-title-details {
-    margin-bottom: 4%;
-  }
-  .recruitment-flex-container:not(:last-child) {
-    margin-bottom: 5%;
-  }
-
-  .interview {
-    background-color: #fff;
-  }
-  .interview-title {
-    text-align: center;
-    padding-bottom: 60px;
-  }
-  .interview-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    padding: 0 0 30px 30px;
-    overflow-x: scroll;
-    margin: auto;
-  }
-  .interview-flex-link {
-    width: calc((100% - 70px) / 3);
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    position: relative;
-  }
-  .interview-flex-link-desc {
-    padding-top: 8%;
-    text-align: center;
-    color: #fff;
-    font-size: 0.8em;
-  }
-  .interview-flex-link-desc-name {
-    font-size: 1em;
-    margin: 5% 0;
-  }
-  .interview-flex-link:not(:first-child) {
-    margin-left: 1%;
-  }
-  .interview-flex .mask {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-  }
-  .interview-flex-link:hover .mask {
-    opacity: 1;
-  }
-
-  .interview-flex::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-  .interview-flex::-webkit-scrollbar-track {
-    width: 100%;
-    margin-left: 30px;
-    margin-right: 3%;
-    background: #fff;
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 2px gray;
-            box-shadow: inset 0 0 2px gray;
-  }
-  .interview-flex::-webkit-scrollbar-thumb {
-    background: #00859B;
-    border-radius: 10px;
+  .new-container:nth-child(2n) {
+    margin-right: 0;
   }
 
   .footer-company {
-    width: 80%;
+    width: 40%;
   }
   .footer-nav {
     -webkit-box-orient: vertical;
@@ -550,8 +410,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .footer-nav-list-item:not(:last-child) {
     margin-right: 5%;
@@ -576,25 +434,20 @@ img {
     padding-bottom: 5%;
   }
 
-  .section-btn {
-    width: 180px;
-  }
-
   .header-sp-title {
     margin-top: 7%;
   }
 
-  .interview-flex {
-    width: 100%;
+  .new {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .interview-flex-link {
-    width: calc((100% - 70px) / 1);
-  }
-
-  .interview-flex::-webkit-scrollbar-track {
+  .new-container {
     width: 100%;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0;
+    margin-bottom: 5%;
   }
 
   .footer-company {
@@ -655,4 +508,4 @@ img {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
-/*# sourceMappingURL=recruit.css.map */
+/*# sourceMappingURL=single.css.map */

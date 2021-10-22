@@ -14,6 +14,7 @@ function my_setup()
 }
 add_action('after_setup_theme', 'my_setup');
 
+
 /* CSSとJavaScriptの読み込み */
 function my_script_init()
   { // WordPressに含まれているjquery.jsを読み込まない
@@ -31,27 +32,18 @@ function twpp_enqueue_styles()
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
   wp_enqueue_style('reset-sheet', get_template_directory_uri() . "/css/reset.css");
-  if (is_single()) {
-    wp_enqueue_style('single', get_template_directory_uri() . '/single.css');
-  } else {
-    wp_enqueue_style('main-style-sheet', get_template_directory_uri() . "/style.css");
-  }
-  if (is_category()) {
-    wp_enqueue_style('category', get_template_directory_uri() . '/category.css');
-  } else {
-    wp_enqueue_style('main-style-sheet', get_template_directory_uri() . "/style.css");
-  }
 }
 add_action('wp_enqueue_scripts', 'twpp_enqueue_styles');
 
+// カスタマイズ用の黒いバー↓
 add_filter('show_admin_bar', '__return_false');
+
 
 function twpp_enqueue_scripts()
 {
   wp_enqueue_script(
     'main-js-sheet',
     get_template_directory_uri() . '/js/main.js',
-    get_template_directory_uri() . '/js/my-jquery.js',
     array(),
     false,
     true

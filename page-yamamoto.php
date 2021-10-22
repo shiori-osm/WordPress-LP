@@ -1,8 +1,15 @@
+<?php
+/*
+Template Name: interview-yamamoto
+*/
+?>
+
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/name.css">
 <?php get_header(); ?>
 
 <main class="fv">
   <div class="fv-img">
-    <img class="fv-img-img" src="img/name-yamaguchi1.png" alt="">
+    <img class="fv-img-img" src="<?php echo get_theme_file_uri("img/name-yamamoto1.png"); ?>" alt="">
   </div>
 </main>
 
@@ -10,32 +17,31 @@
 <section class="name inner">
   <div class="name-flex">
     <div class="name-flex-left">
-      <div class="name-flex-left-box fade-in fade-in-up">
-        <p class="name-flex-left-box-title">営業戦略部/営業第三チーム</p>
-        <p class="name-flex-left-box-name">山口太一</p>
-        <p class="name-flex-left-box-join">2021年4月中途入社</p>
-        <p>入社1年目の期待のエース。<br>彼女募集中。</p>
+      <div class="name-flex-left-box">
+        <p class="name-flex-left-box-title">営業戦略部/営業第一チーム</p>
+        <p class="name-flex-left-box-name">山本太郎</p>
+        <p class="name-flex-left-box-join">2020年12月中途入社</p>
+        <p>入社1年目の期待のエース。<br>1児のパパ。</p>
       </div>
-      <div class="name-flex-left-text fade-in fade-in-up">
-        <p class="name-flex-left-text-p">
-          サンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入ります</p>
+      <div class="name-flex-left-text">
+        <p class="name-flex-left-text-p">サンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入ります</p>
         <p class="name-flex-left-text-p">サンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入ります</p>
         <p>サンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入ります</p>
       </div>
     </div>
-    <figure class="name-flex-right fade-in fade-in-up">
-      <figcaption class="name-flex-right-caption">撮影場所：株式会社estra ワークスペース</figcaption>
-      <img class="name-flex-right-img" src="img/name-yamaguchi2.png" alt="">
+    <figure class="name-flex-right">
+      <figcaption class="name-flex-right-caption">撮影場所：株式会社estra 休憩室</figcaption>
+      <img class="name-flex-right-img" src="<?php echo get_theme_file_uri("img/name-yamamoto2.png"); ?>" alt="">
     </figure>
   </div>
 </section>
 
 <section class="schedule">
   <div class="section-title schedule-title">
-    <h2 class="section-title-en fade-in fade-in-up">Daily Schedule</h2>
-    <p class="section-title-ja fade-in fade-in-up">1日の流れ</p>
+    <h2 class="section-title-en">Daily Schedule</h2>
+    <p class="section-title-ja">1日の流れ</p>
   </div>
-  <dl class="schedule-table fade-in fade-in-up">
+  <dl class="schedule-table">
     <dt class="schedule-table-dt">9：00</dt>
     <dd class="schedule-table-dd">リモートワーク開始<br>
       クライアント様からのメールチェック</dd>
@@ -62,28 +68,28 @@
 
 <section class="dayoff">
   <div class="section-title">
-    <h2 class="section-title-en fade-in fade-in-up">Day Off</h2>
-    <p class="section-title-ja fade-in fade-in-up">休日の過ごし方</p>
+    <h2 class="section-title-en">Day Off</h2>
+    <p class="section-title-ja">休日の過ごし方</p>
   </div>
   <div class="dayoff-flex inner">
-    <div class="dayoff-flex-container fade-in fade-in-up">
-      <img src="img/name-card7.jpg" alt="">
+    <div class="dayoff-flex-container">
+      <img src="<?php echo get_theme_file_uri("img/name-card1.png"); ?>" alt="">
       <div class="dayoff-flex-container-desc">
-        <h3 class="dayoff-flex-container-desc-title">釣りは生きがい</h3>
+        <h3 class="dayoff-flex-container-desc-title">子どもの成長が幸せ</h3>
         <p class="dayoff-flex-container-desc-p">サンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入ります</p>
       </div>
     </div>
-    <div class="dayoff-flex-container fade-in fade-in-up">
-      <img src="img/name-card8.jpg" alt="">
+    <div class="dayoff-flex-container">
+      <img src="<?php echo get_theme_file_uri("img/name-card2.png"); ?>" alt="">
       <div class="dayoff-flex-container-desc">
-        <h3 class="dayoff-flex-container-desc-title">美味しく頂くのも楽しみ</h3>
+        <h3 class="dayoff-flex-container-desc-title">音楽は心の癒し</h3>
         <p class="dayoff-flex-container-desc-p">サンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入ります</p>
       </div>
     </div>
-    <div class="dayoff-flex-container fade-in fade-in-up">
-      <img src="img/name-card9.png" alt="">
+    <div class="dayoff-flex-container">
+      <img src="<?php echo get_theme_file_uri("img/name-card3.png"); ?>" alt="">
       <div class="dayoff-flex-container-desc">
-        <h3 class="dayoff-flex-container-desc-title">ダイビング、はじめました</h3>
+        <h3 class="dayoff-flex-container-desc-title">カメラ、はじめました</h3>
         <p class="dayoff-flex-container-desc-p">サンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入りますサンプルテキストが入ります</p>
       </div>
     </div>
@@ -93,22 +99,21 @@
 <section class="next">
   <div class="next-flex">
     <div class="section-title next-flex-title">
-      <h3 class="section-title-en fade-in fade-in-up">Next Interview</h3>
-      <p class="section-title-ja fade-in fade-in-up">次のインタビュー</p>
+      <h3 class="section-title-en">Next Interview</h3>
+      <p class="section-title-ja">次のインタビュー</p>
       <div class="next-btns">
-        <a href="" class="section-btn next-flex-btn fade-in fade-in-up">採用情報はこちら</a>
-        <a href="" class="section-btn section-btn-navy fade-in fade-in-up">お問い合わせフォームへ</a>
+        <a href="" class="section-btn next-flex-btn ">採用情報はこちら</a>
+        <a href="" class="section-btn section-btn-navy ">お問い合わせフォームへ</a>
       </div>
     </div>
-    <a href="komiya.html" class="next-flex-link fade-in fade-in-left">
-      <img src="img/name-next-komiya.png">
+    <a href="<?php echo home_url("interview2-kakimoto"); ?>" class="next-flex-link">
+      <img src="<?php echo get_theme_file_uri("img/name-next-kakimoto.png"); ?>">
     </a>
     <div class="next-sp-btns">
-      <a href="" class="section-btn next-flex-btn">採用情報はこちら</a>
-      <a href="" class="section-btn section-btn-navy">お問い合わせフォームへ</a>
+      <a href="<?php echo home_url("recruit"); ?>" class="section-btn next-flex-btn">採用情報はこちら</a>
+      <a href="<?php echo home_url("contact"); ?>" class="section-btn section-btn-navy">お問い合わせフォームへ</a>
     </div>
   </div>
 </section>
-
 
 <?php get_footer(); ?>

@@ -94,7 +94,7 @@ $color-gray:rgba($color:#00859B,$alpha:0.1);
     }
   }
 }
-.fv{
+.frontfv{
   &-sp-img{
     display: none;
   }
@@ -234,6 +234,7 @@ $color-gray:rgba($color:#00859B,$alpha:0.1);
   background-color: #efefef;
   &-company{
     padding-top:60px ;
+    padding-bottom: 5%;
     width: 20%;
     text-align: center;
     font-size: 1.5em;
@@ -304,7 +305,7 @@ $color-gray:rgba($color:#00859B,$alpha:0.1);
   .header{
     display: none;
   }
-  .fv{
+  .frontfv{
     &-img{
       display: none;
     }
@@ -464,7 +465,9 @@ $color-gray:rgba($color:#00859B,$alpha:0.1);
 
   .footer{
     &-company{
-      width: 80%;
+      margin: auto;
+      width: 70%;
+      padding-bottom: 5%;
     }
     &-nav{
       flex-direction: column;
